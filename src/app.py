@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 def init_session_state():
-    """Initialize session state variables if they don't exist."""
+    """Initialize session variables if they don't exist."""
     if "readme_generated" not in st.session_state:
         st.session_state.readme_generated = False
     if "readme_content" not in st.session_state:
